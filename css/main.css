@@ -1,0 +1,73 @@
+body {background-image: url("../images/clouds.png")}
+/* navigatie materialise */
+nav ul a {
+    color:black;
+
+	position: relative;
+}
+
+
+nav {box-shadow: none;
+background-color: #69C043;
+height: 130px;
+	 text-transform: uppercase;
+border-bottom: 6px solid darkgreen;
+}
+
+
+
+.container {
+width: 80%;
+}
+
+
+.bjlogo {
+	width: 80%;
+
+	margin: 0 auto;
+}
+
+/* dropdown */ 
+
+
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0;
+    z-index:1;
+	
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+
+}
+
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}
+
+.content {
+    background-color:white;
+    height: 1000px;
+    color:black;
+
+}
+
+
+
+ul:not(.browser-default) {
+  padding-left: auto;
+}
+
+ul li {padding:20px;}
+
+
