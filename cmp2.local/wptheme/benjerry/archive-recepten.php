@@ -32,8 +32,9 @@
                
    <?php $i++; endwhile; ?>
  
-<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+
+<div class="previouspost right z-depth-2"><?php next_posts_link( 'Volgende recepten' ); ?></div>
+<div class="nextpost left z-depth-2"><?php previous_posts_link( 'Vorige recepten' ); ?></div>
 </div>
 </section>
 
