@@ -171,7 +171,13 @@ add_action( 'init', 'revcon_change_post_object' );
     }
     add_action( 'init', 'add_my_custom_posttype_smaken' );
 
-
+//limiet recepten blog
+function set_posts_per_page_for_recepten_cpt( $query ) {
+  if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'recepten' ) ) {
+    $query->set( 'posts_per_page', '5' );
+  }
+}
+add_action( 'pre_get_posts', 'set_posts_per_page_for_recepten_cpt' );
 
     //METABOX AANMAKEN INGRDIENTEN
             function smaken_ingr_box(){
